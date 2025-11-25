@@ -148,15 +148,9 @@ const displayTaskCount = document.getElementById('displayTaskCount');
 let userName = 'Not set';
 let userEmail = 'Not set';
 
-// Debug: Check if all elements are found
-console.log('Profile Form:', profileForm);
-console.log('Display Name:', displayName);
-console.log('Display Email:', displayEmail);
-console.log('Display Task Count:', displayTaskCount);
 
 profileForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log('Form submission prevented');
 
 
     userName = nameInput.value.trim();
@@ -166,7 +160,6 @@ profileForm.addEventListener('submit', (e) => {
     displayEmail.textContent = userEmail;
 
 
-    alert('Profile updated successfully!');
 });
 
 updateCompletedTaskCount();
